@@ -40,4 +40,9 @@ updateData(table, data) async {
 	return await connection
 	?.update(table, data, where: 'id=?', whereArgs: [data['id']]);
 }
+readFilterData(data) async{
+  var connection=await database;
+  return await connection?.query('friends', where: '"category" = ?', whereArgs: [data]);
+
+}
 }

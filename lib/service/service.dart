@@ -20,5 +20,9 @@ class Service{
     return await _repo.updateData('friends', friends.friendsMap());
   }
 
+readFilterData(data) async{
+  return await _repo.readFilterData(data);
+
+}
 }
 
