@@ -57,29 +57,29 @@ setState(() {
         
         title: appBarTitle,
           actions: <Widget>[
-             IconButton(icon: actionIcon,onPressed:(){
-              setState(() {
-                if ( actionIcon.icon == Icons.search){
-                  actionIcon =  const Icon(Icons.close);
-                  appBarTitle =  const TextField(
-                    style:  TextStyle(
-                      color: Colors.white,
+            //  IconButton(icon: actionIcon,onPressed:(){
+            //   setState(() {
+            //     if ( actionIcon.icon == Icons.search){
+            //       actionIcon =  const Icon(Icons.close);
+            //       appBarTitle =  const TextField(
+            //         style:  TextStyle(
+            //           color: Colors.white,
 
-                    ),
-                    decoration:   InputDecoration(
-                        prefixIcon: Icon(Icons.search,color: Colors.white),
-                        hintText: "Search...",
-                        hintStyle: TextStyle(color: Colors.white)
-                    ),
-                  );}
-                else {
-                  actionIcon = const Icon(Icons.search);
-                  appBarTitle = const Text("Friends App");
-                }
+            //         ),
+            //         decoration:   InputDecoration(
+            //             prefixIcon: Icon(Icons.search,color: Colors.white),
+            //             hintText: "Search...",
+            //             hintStyle: TextStyle(color: Colors.white)
+            //         ),
+            //       );}
+            //     else {
+            //       actionIcon = const Icon(Icons.search);
+            //       appBarTitle = const Text("Friends App");
+            //     }
 
 
-              });
-            } ,),
+            //   });
+            // } ,),
            TextButton(onPressed: (){},  child: DropdownButtonHideUnderline(
         child: DropdownButton2(
           isExpanded: true,
